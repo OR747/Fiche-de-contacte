@@ -24,7 +24,7 @@ $.addEventListener("DOMContentLoaded", () => {
 
     console.log(data);
 
-    const response = await axios.post("http://localhost:3000/", data);
+    const response = await axios.post("http://localhost:3000/form", data);
 
     if (response.status === 200) {
       alert("Un mail vous a été envoyé");
